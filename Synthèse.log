@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.8)  1 JUN 2021 11:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.8)  1 JUN 2021 11:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1614,11 +1614,11 @@ B64E4F.pygtex [17])
 
 (./_minted-Synthèse/8536A2EB4A352CE735E4DD357AC67194BE404D9DC7F1CE2257CC3F981D
 B64E4F.pygtex) [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 761.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 761.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 762.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 762.
  (./Synthèse.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 761.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 761.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 762.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 762.
 Package rerunfilecheck Info: File `Synthèse.out' has not changed.
 (rerunfilecheck)             Checksum: D24E9B32433F9345CE8B3720A912CFBD;2128.
 
@@ -1630,7 +1630,7 @@ runsystem(rm Synthèse.pyg)...executed.
 Package logreq Info: Writing requests to 'Synthèse.run.xml'.
 \openout1 = `Synthèse.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 761.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 762.
  ) 
 Here is how much of TeX's memory you used:
  41978 strings out of 483065
@@ -1654,10 +1654,10 @@ onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on Synthèse.pdf (18 pages, 245337 bytes).
+Output written on Synthèse.pdf (18 pages, 245497 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
+ 396 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
  98 named destinations out of 1000 (max. 500000)
  269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
