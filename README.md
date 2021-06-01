@@ -1,5 +1,5 @@
 # INFO-F-203-Synthese
-Rédigée en LaTeX avec Edo (@ecuellar)
+Rédigée en LaTeX avec Edo (@EdgardoCuellar)
 
 Packages:
 - minted pour la rédaction des morceaux de code
