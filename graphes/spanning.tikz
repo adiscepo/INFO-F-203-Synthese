@@ -1,0 +1,65 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=V] (0) at (0.5, 2.25) {};
+		\node [style=V] (1) at (-2, 0.25) {};
+		\node [style=V] (2) at (0, 0.5) {};
+		\node [style=V] (3) at (0.5, -2.25) {};
+		\node [style=V] (4) at (-1.25, -2.5) {};
+		\node [style=V] (5) at (1.25, -1) {};
+		\node [style=V] (6) at (2.25, 0.75) {};
+		\node [style=V] (7) at (-2.25, -1.5) {};
+		\node [style=V] (8) at (-1.75, 1.75) {};
+		\node [style=V] (9) at (-0.75, -0.75) {};
+		\node [style=V] (10) at (8.5, 2.25) {};
+		\node [style=V] (11) at (6, 0.25) {};
+		\node [style=V] (12) at (8, 0.5) {};
+		\node [style=V] (13) at (8.5, -2.25) {};
+		\node [style=V] (14) at (6.75, -2.5) {};
+		\node [style=V] (15) at (9.25, -1) {};
+		\node [style=V] (16) at (10.25, 0.75) {};
+		\node [style=V] (17) at (5.75, -1.5) {};
+		\node [style=V] (18) at (6.25, 1.75) {};
+		\node [style=V] (19) at (7.25, -0.75) {};
+		\node [style=none] (20) at (3, 0) {};
+		\node [style=none] (21) at (5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=E] (0) to (8);
+		\draw [style=E] (1) to (7);
+		\draw [style=E] (2) to (0);
+		\draw [style=E] (0) to (6);
+		\draw [style=E] (6) to (2);
+		\draw [style=E] (3) to (4);
+		\draw [style=E] (3) to (5);
+		\draw [style=E] (2) to (5);
+		\draw [style=E] (2) to (8);
+		\draw [style=E] (5) to (6);
+		\draw [style=redE] (8) to (0);
+		\draw [style=redE] (0) to (6);
+		\draw [style=redE] (8) to (2);
+		\draw [style=redE] (1) to (9);
+		\draw [style=redE] (9) to (2);
+		\draw [style=redE] (9) to (3);
+		\draw [style=redE] (1) to (7);
+		\draw [style=redE] (3) to (4);
+		\draw [style=redE] (6) to (5);
+		\draw [style=E] (1) to (2);
+		\draw [style=E] (7) to (4);
+		\draw [style=E] (10) to (18);
+		\draw [style=E] (11) to (17);
+		\draw [style=E] (10) to (16);
+		\draw [style=E] (13) to (14);
+		\draw [style=E] (12) to (18);
+		\draw [style=E] (15) to (16);
+		\draw [style=redE] (18) to (10);
+		\draw [style=redE] (10) to (16);
+		\draw [style=redE] (18) to (12);
+		\draw [style=redE] (11) to (19);
+		\draw [style=redE] (19) to (12);
+		\draw [style=redE] (19) to (13);
+		\draw [style=redE] (11) to (17);
+		\draw [style=redE] (13) to (14);
+		\draw [style=redE] (16) to (15);
+		\draw [style=arrow ret] (21.center) to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

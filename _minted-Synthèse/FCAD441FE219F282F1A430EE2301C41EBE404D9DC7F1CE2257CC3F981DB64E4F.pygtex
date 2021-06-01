@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{dfs}\PYG{o}{(}\PYG{n}{Graph} \PYG{n}{G}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{v}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+ \PYG{n}{marked}\PYG{o}{[}\PYG{n}{v}\PYG{o}{]} \PYG{o}{=} \PYG{k+kc}{true}\PYG{o}{;}
+ \PYG{n}{preorder}\PYG{o}{.}\PYG{n+na}{enqueu}\PYG{o}{(}\PYG{n}{v}\PYG{o}{);} \PYG{c+c1}{// Récupérer le préordre}
+ \PYG{k}{for} \PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{w}\PYG{o}{:} \PYG{n}{G}\PYG{o}{.}\PYG{n+na}{adj}\PYG{o}{(}\PYG{n}{v}\PYG{o}{))} \PYG{o}{\PYGZob{}}
+  \PYG{k}{if} \PYG{o}{(!}\PYG{n}{marked}\PYG{o}{[}\PYG{n}{w}\PYG{o}{])} \PYG{o}{\PYGZob{}}
+   \PYG{n}{dfs}\PYG{o}{(}\PYG{n}{G}\PYG{o}{,} \PYG{n}{w}\PYG{o}{);}
+   \PYG{n}{edgeTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]} \PYG{o}{=} \PYG{n}{v}\PYG{o}{;}
+  \PYG{o}{\PYGZcb{}}
+ \PYG{o}{\PYGZcb{}}
+ \PYG{n}{postorder}\PYG{o}{.}\PYG{n+na}{enqueu}\PYG{o}{(}\PYG{n}{v}\PYG{o}{);} \PYG{c+c1}{// Récupérer le postordre}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

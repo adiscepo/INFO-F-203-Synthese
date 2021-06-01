@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=V] (0) at (0, 2) {1};
+		\node [style=V] (1) at (-1.75, 0) {2};
+		\node [style=V] (2) at (3.25, 1) {7};
+		\node [style=V] (3) at (-3, -2.5) {3};
+		\node [style=V] (4) at (-1, -4) {5};
+		\node [style=V] (5) at (3.25, -4) {6};
+		\node [style=V] (6) at (5, -1.5) {8};
+		\node [style=V] (7) at (1.25, -1) {4};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=blackDE] (0) to (1);
+		\draw [style=blackDE] (1) to (3);
+		\draw [style=blackDE] (1) to (7);
+		\draw [style=blackDE] (3) to (4);
+		\draw [style=blackDE] (7) to (4);
+		\draw [style=blackDE] (7) to (5);
+		\draw [style=blackDE] (6) to (5);
+		\draw [style=blackDE] (2) to (6);
+		\draw [style=blackDE] (0) to (2);
+	\end{pgfonlayer}
+\end{tikzpicture}

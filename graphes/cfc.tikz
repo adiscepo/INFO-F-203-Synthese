@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=orange] (0) at (-1.75, 1) {3};
+		\node [style=red] (1) at (-3.25, -1) {2};
+		\node [style=red] (2) at (-0.25, -1) {4};
+		\node [style=red] (3) at (-3.25, -4) {1};
+		\node [style=red] (4) at (-0.25, -4) {5};
+		\node [style=magenta] (5) at (-5.25, -6) {0};
+		\node [style=blue] (6) at (1.75, -1) {8};
+		\node [style=blue] (7) at (2.5, -4) {7};
+		\node [style=blue] (8) at (4.75, -1) {9};
+		\node [style=green] (9) at (1.75, -6) {6};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=blackDE] (0) to (1);
+		\draw [style=blackDE] (1) to (3);
+		\draw [style=blackDE] (3) to (4);
+		\draw [style=blackDE] (4) to (2);
+		\draw [style=blackDE] (4) to (9);
+		\draw [style=blackDE] (9) to (7);
+		\draw [style=blackDE] (7) to (6);
+		\draw [style=blackDE] (6) to (8);
+		\draw [style=blackDE] (8) to (7);
+		\draw [style=blackDE] (5) to (3);
+		\draw [style=blackDE] (0) to (2);
+		\draw [style=blackDE] (2) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

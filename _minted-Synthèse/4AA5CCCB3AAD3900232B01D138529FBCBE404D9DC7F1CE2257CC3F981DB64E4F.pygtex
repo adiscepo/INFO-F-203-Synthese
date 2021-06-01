@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{delMax}\PYG{o}{()\PYGZob{}}
+	\PYG{n}{Key} \PYG{n}{max} \PYG{o}{=} \PYG{n}{pq}\PYG{o}{[}\PYG{l+m+mi}{1}\PYG{o}{];} \PYG{c+c1}{// On récupère le maximum}
+	\PYG{n}{exch}\PYG{o}{(}\PYG{l+m+mi}{1}\PYG{o}{,} \PYG{n}{n}\PYG{o}{\PYGZhy{}\PYGZhy{});}	\PYG{c+c1}{// On échange ça place avec le dernier élément du heap}
+	\PYG{n}{sink}\PYG{o}{(}\PYG{l+m+mi}{1}\PYG{o}{);}	\PYG{c+c1}{// On fait redescendre cet élément jusqu\PYGZsq{}à une position correcte}
+	\PYG{n}{pq}\PYG{o}{[}\PYG{n}{n}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{o}{]} \PYG{o}{=} \PYG{k+kc}{null}\PYG{o}{;} \PYG{c+c1}{// On supprime le dernier élément (le maximum donc)}
+	\PYG{k}{return} \PYG{n}{max}\PYG{o}{;} \PYG{c+c1}{// On retourne ce maximum}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

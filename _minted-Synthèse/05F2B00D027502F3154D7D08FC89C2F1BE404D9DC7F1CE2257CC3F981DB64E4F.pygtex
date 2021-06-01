@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// QuickSort}
+\PYG{k+kt}{void} \PYG{n+nf}{sort}\PYG{o}{(}\PYG{n}{Comparable}\PYG{o}{[]} \PYG{n}{a}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{lo}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{hi}\PYG{o}{)\PYGZob{}}
+	\PYG{k}{if} \PYG{o}{(}\PYG{n}{hi} \PYG{o}{\PYGZlt{}=} \PYG{n}{lo}\PYG{o}{)} \PYG{k}{return}\PYG{o}{;}
+	\PYG{k+kt}{int} \PYG{n}{j} \PYG{o}{=} \PYG{n}{partition}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{lo}\PYG{o}{,} \PYG{n}{hi}\PYG{o}{);}
+	\PYG{n}{sort}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{lo}\PYG{o}{,} \PYG{n}{j}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{);}
+	\PYG{n}{sort}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{j}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{o}{,} \PYG{n}{hi}\PYG{o}{);}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

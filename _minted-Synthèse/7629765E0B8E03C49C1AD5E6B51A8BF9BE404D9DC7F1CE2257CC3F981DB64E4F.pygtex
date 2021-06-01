@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{while} \PYG{o}{(!}\PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{isEmpty}\PYG{o}{()} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{mst}\PYG{o}{.}\PYG{n+na}{size}\PYG{o}{()} \PYG{o}{\PYGZlt{}} \PYG{n}{G}\PYG{o}{.}\PYG{n+na}{V}\PYG{o}{()} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{o}{)\PYGZob{}}
+	\PYG{n}{Edge} \PYG{n}{e} \PYG{o}{=} \PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{delMin}\PYG{o}{();}
+	\PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{n}{e}\PYG{o}{.}\PYG{n+na}{either}\PYG{o}{(),} \PYG{n}{w} \PYG{o}{=} \PYG{n}{e}\PYG{o}{.}\PYG{n+na}{other}\PYG{o}{(}\PYG{n}{v}\PYG{o}{);}
+	\PYG{k}{if} \PYG{o}{(}\PYG{n}{marked}\PYG{o}{[}\PYG{n}{v}\PYG{o}{]} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{marked}\PYG{o}{[}\PYG{n}{w}\PYG{o}{])} \PYG{k}{continue}\PYG{o}{;}
+	\PYG{n}{mst}\PYG{o}{.}\PYG{n+na}{enqueue}\PYG{o}{(}\PYG{n}{e}\PYG{o}{);}
+	\PYG{k}{if} \PYG{o}{(!}\PYG{n}{marked}\PYG{o}{[}\PYG{n}{v}\PYG{o}{])} \PYG{n}{visit}\PYG{o}{(}\PYG{n}{G}\PYG{o}{,} \PYG{n}{v}\PYG{o}{);} \PYG{c+c1}{// visit() màj la file de priorité}
+	\PYG{k}{if} \PYG{o}{(!}\PYG{n}{marked}\PYG{o}{[}\PYG{n}{w}\PYG{o}{])} \PYG{n}{visit}\PYG{o}{(}\PYG{n}{G}\PYG{o}{,} \PYG{n}{w}\PYG{o}{);}
+\end{Verbatim}

@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{bfs}\PYG{o}{(}\PYG{n}{Graph} \PYG{n}{G}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{s}\PYG{o}{)\PYGZob{}}
+	\PYG{n}{Queue}\PYG{o}{\PYGZlt{}}\PYG{n}{Integer}\PYG{o}{\PYGZgt{}} \PYG{n}{q} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Queue}\PYG{o}{\PYGZlt{}}\PYG{n}{Integer}\PYG{o}{\PYGZgt{}();}
+ 	\PYG{n}{q}\PYG{o}{.}\PYG{n+na}{enqueue}\PYG{o}{(}\PYG{n}{s}\PYG{o}{);}
+	\PYG{n}{marked}\PYG{o}{[}\PYG{n}{s}\PYG{o}{]} \PYG{o}{=} \PYG{k+kc}{true}\PYG{o}{;}
+	\PYG{n}{distTo}\PYG{o}{[}\PYG{n}{s}\PYG{o}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{o}{;}
+ 	\PYG{k}{while} \PYG{o}{(!}\PYG{n}{q}\PYG{o}{.}\PYG{n+na}{isEmpty}\PYG{o}{())\PYGZob{}}
+  		\PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{n}{q}\PYG{o}{.}\PYG{n+na}{dequeue}\PYG{o}{();}
+  		\PYG{k}{for} \PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{w} \PYG{o}{:} \PYG{n}{G}\PYG{o}{.}\PYG{n+na}{adj}\PYG{o}{(}\PYG{n}{v}\PYG{o}{))} \PYG{o}{\PYGZob{}}
+   			\PYG{k}{if} \PYG{o}{(!}\PYG{n}{marked}\PYG{o}{[}\PYG{n}{w}\PYG{o}{])} \PYG{o}{\PYGZob{}}
+    			\PYG{n}{q}\PYG{o}{.}\PYG{n+na}{enqueue}\PYG{o}{(}\PYG{n}{w}\PYG{o}{);}
+    			\PYG{n}{marked}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]} \PYG{o}{=} \PYG{k+kc}{true}\PYG{o}{;}
+    			\PYG{n}{edgeTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]} \PYG{o}{=} \PYG{n}{v}\PYG{o}{;}
+    			\PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]} \PYG{o}{=} \PYG{n}{distTo}\PYG{o}{[}\PYG{n}{v}\PYG{o}{]} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{o}{;}
+   			\PYG{o}{\PYGZcb{}}
+  		\PYG{o}{\PYGZcb{}}
+ 	\PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

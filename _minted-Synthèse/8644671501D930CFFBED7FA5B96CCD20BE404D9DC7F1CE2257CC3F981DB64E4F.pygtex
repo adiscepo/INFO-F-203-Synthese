@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Node} \PYG{n+nf}{insert}\PYG{o}{(}\PYG{n}{Node} \PYG{n}{h}\PYG{o}{,} \PYG{n}{Key} \PYG{n}{key}\PYG{o}{,} \PYG{n}{Value} \PYG{n}{val}\PYG{o}{)\PYGZob{}}
+	\PYG{k}{if} \PYG{o}{(}\PYG{n}{h} \PYG{o}{==} \PYG{k+kc}{null}\PYG{o}{)} \PYG{k}{return} \PYG{k}{new} \PYG{n}{Node}\PYG{o}{(}\PYG{n}{key}\PYG{o}{,} \PYG{n}{val}\PYG{o}{,} \PYG{n}{RED}\PYG{o}{);}
+	\PYG{k}{if}      \PYG{o}{(}\PYG{n}{key} \PYG{o}{\PYGZlt{}} \PYG{n}{h}\PYG{o}{.}\PYG{n+na}{key}\PYG{o}{)}  \PYG{n}{h}\PYG{o}{.}\PYG{n+na}{left} \PYG{o}{=} \PYG{n}{insert}\PYG{o}{(}\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{left}\PYG{o}{,} \PYG{n}{key}\PYG{o}{,} \PYG{n}{val}\PYG{o}{);}
+	\PYG{k}{else} \PYG{k}{if} \PYG{o}{(}\PYG{n}{key} \PYG{o}{\PYGZgt{}} \PYG{n}{h}\PYG{o}{.}\PYG{n+na}{key}\PYG{o}{)}  \PYG{n}{h}\PYG{o}{.}\PYG{n+na}{right} \PYG{o}{=} \PYG{n}{insert}\PYG{o}{(}\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{right}\PYG{o}{,} \PYG{n}{key}\PYG{o}{,} \PYG{n}{val}\PYG{o}{);}
+	\PYG{k}{else} \PYG{k}{if} \PYG{o}{(}\PYG{n}{key} \PYG{o}{==} \PYG{n}{h}\PYG{o}{.}\PYG{n+na}{key}\PYG{o}{)} \PYG{n}{h}\PYG{o}{.}\PYG{n+na}{val} \PYG{o}{=} \PYG{n}{val}\PYG{o}{;}
+	
+	\PYG{k}{if} \PYG{o}{(}\PYG{n}{isRed}\PYG{o}{(}\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{right}\PYG{o}{)} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{o}{!}\PYG{n}{isRed}\PYG{o}{(}\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{left}\PYG{o}{))}     \PYG{n}{h} \PYG{o}{=} \PYG{n}{rotateLeft}\PYG{o}{(}\PYG{n}{h}\PYG{o}{);}
+	\PYG{k}{if} \PYG{o}{(}\PYG{n}{isRed}\PYG{o}{(}\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{left}\PYG{o}{)}  \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{isRed}\PYG{o}{(}\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{left}\PYG{o}{.}\PYG{n+na}{left}\PYG{o}{))} \PYG{n}{h} \PYG{o}{=} \PYG{n}{rotateRight}\PYG{o}{(}\PYG{n}{h}\PYG{o}{);}
+	\PYG{k}{if} \PYG{o}{(}\PYG{n}{isRed}\PYG{o}{(}\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{right}\PYG{o}{)} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{isRed}\PYG{o}{(}\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{left}\PYG{o}{))}      \PYG{n}{flipColors}\PYG{o}{(}\PYG{n}{h}\PYG{o}{);}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

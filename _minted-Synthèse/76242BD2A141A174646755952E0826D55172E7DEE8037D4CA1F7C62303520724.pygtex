@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int} \PYG{n+nf}{dicho}\PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{[]} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{elem}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{low}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{high}\PYG{p}{)\PYGZob{}}
+	\PYG{k}{if} \PYG{p}{(}\PYG{n}{low} \PYG{o}{==} \PYG{n}{high}\PYG{p}{)} \PYG{k}{return} \PYG{n}{low}\PYG{p}{;}
+	\PYG{k+kt}{int} \PYG{n}{m} \PYG{o}{=} \PYG{p}{(} \PYG{n}{low} \PYG{o}{+} \PYG{n}{h} \PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{;}	\PYG{c+c1}{// Prend l\PYGZsq{}élement au milieu du tableau}
+	\PYG{k}{if} \PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{m}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{elem}\PYG{p}{)} \PYG{k}{return} \PYG{n}{dicho}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{elem}\PYG{p}{,} \PYG{n}{m}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{high}\PYG{p}{);}
+	\PYG{k}{else} \PYG{k}{if} \PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{m}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{n}{elem}\PYG{p}{)} \PYG{k}{return} \PYG{n}{dicho}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{elem}\PYG{p}{,} \PYG{n}{low}\PYG{p}{,} \PYG{n}{m}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{);}
+	\PYG{k}{else} \PYG{k}{return} \PYG{n}{m}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

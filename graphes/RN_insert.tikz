@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=V] (0) at (-1, -2) {B};
+		\node [style=V] (1) at (-3, 0) {A};
+		\node [style=V] (2) at (-1, 2) {C};
+		\node [style=none] (3) at (-4, -1) {};
+		\node [style=none] (4) at (0, 1) {};
+		\node [style=V] (5) at (5, 0) {B};
+		\node [style=V] (6) at (3, -2) {A};
+		\node [style=V] (7) at (7, 2) {C};
+		\node [style=none] (9) at (8, 1) {};
+		\node [style=none] (10) at (6, -1) {};
+		\node [style=V] (11) at (14, 2) {B};
+		\node [style=V] (12) at (12, 0) {A};
+		\node [style=V] (13) at (16, 0) {C};
+		\node [style=V] (14) at (22.25, 2) {B};
+		\node [style=V] (15) at (20.25, 0) {A};
+		\node [style=V] (16) at (24.25, 0) {C};
+		\node [style=none] (17) at (22.25, 3.25) {};
+		\node [style=none] (18) at (1.5, 0) {};
+		\node [style=none] (19) at (2.5, 0) {};
+		\node [style=none] (20) at (9.5, 0) {};
+		\node [style=none] (21) at (10.5, 0) {};
+		\node [style=none] (22) at (17.75, 0) {};
+		\node [style=none] (23) at (18.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=redE] (2) to (1);
+		\draw [style=redE] (1) to (0);
+		\draw [style=E] (2) to (4.center);
+		\draw [style=E] (1) to (3.center);
+		\draw [style=redE] (6) to (5);
+		\draw [style=E] (7) to (9.center);
+		\draw [style=redE] (7) to (5);
+		\draw [style=E] (5) to (10.center);
+		\draw [style=redE] (12) to (11);
+		\draw [style=redE] (11) to (13);
+		\draw [style=redE] (17.center) to (14);
+		\draw [style=E] (15) to (14);
+		\draw [style=E] (14) to (16);
+		\draw [style=arrow] (18.center) to (19.center);
+		\draw [style=arrow] (20.center) to (21.center);
+		\draw [style=arrow] (22.center) to (23.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

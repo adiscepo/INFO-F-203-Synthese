@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// Partition}
+\PYG{k+kt}{int} \PYG{n+nf}{partition}\PYG{o}{(}\PYG{n}{Comparable}\PYG{o}{[]} \PYG{n}{a}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{lo}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{hi}\PYG{o}{)\PYGZob{}}
+	\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{lo}\PYG{o}{,} \PYG{n}{j} \PYG{o}{=} \PYG{n}{hi} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{o}{;}
+	\PYG{k}{while} \PYG{o}{(}\PYG{k+kc}{true}\PYG{o}{)\PYGZob{}}
+		\PYG{k}{while} \PYG{o}{(}\PYG{n}{less}\PYG{o}{(}\PYG{n}{a}\PYG{o}{[++}\PYG{n}{i}\PYG{o}{],} \PYG{n}{a}\PYG{o}{[}\PYG{n}{lo}\PYG{o}{]))} \PYG{o}{\PYGZob{}}
+			\PYG{k}{if} \PYG{o}{(}\PYG{n}{i} \PYG{o}{==} \PYG{n}{hi}\PYG{o}{)} \PYG{k}{break}\PYG{o}{;}
+		\PYG{o}{\PYGZcb{}}
+		\PYG{k}{while} \PYG{o}{(}\PYG{n}{less}\PYG{o}{(}\PYG{n}{a}\PYG{o}{[}\PYG{n}{lo}\PYG{o}{],} \PYG{n}{a}\PYG{o}{[\PYGZhy{}\PYGZhy{}}\PYG{n}{j}\PYG{o}{]))} \PYG{o}{\PYGZob{}}
+			\PYG{k}{if} \PYG{o}{(}\PYG{n}{j} \PYG{o}{==} \PYG{n}{lo}\PYG{o}{)} \PYG{k}{break}\PYG{o}{;}
+		\PYG{o}{\PYGZcb{}}
+		\PYG{k}{if} \PYG{o}{(}\PYG{n}{i} \PYG{o}{\PYGZgt{}=} \PYG{n}{j}\PYG{o}{)} \PYG{k}{break}\PYG{o}{;}
+		\PYG{n}{exch}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{i}\PYG{o}{,} \PYG{n}{j}\PYG{o}{);}
+	\PYG{o}{\PYGZcb{}}
+	\PYG{n}{exch}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{lo}\PYG{o}{,} \PYG{n}{j}\PYG{o}{);}
+	\PYG{k}{return} \PYG{n}{j}\PYG{o}{;}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

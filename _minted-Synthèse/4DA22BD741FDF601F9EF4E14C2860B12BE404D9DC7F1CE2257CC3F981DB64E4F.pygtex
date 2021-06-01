@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{sort}\PYG{o}{(}\PYG{n}{Comparable}\PYG{o}{[]} \PYG{n}{a}\PYG{o}{)\PYGZob{}}
+	\PYG{k+kt}{int} \PYG{o}{=} \PYG{n}{a}\PYG{o}{.}\PYG{n+na}{length}\PYG{o}{;}
+	\PYG{c+c1}{// Construction du tas en parcourant le tableau de clés de droite à gauche}
+	\PYG{k}{for} \PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{k} \PYG{o}{=} \PYG{n}{n}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{o}{;} \PYG{n}{k} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{1}\PYG{o}{;} \PYG{n}{k} \PYG{o}{\PYGZhy{}\PYGZhy{})}
+		\PYG{n}{sink}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{k}\PYG{o}{,} \PYG{n}{n}\PYG{o}{);}
+	\PYG{k}{while} \PYG{o}{(}\PYG{n}{n} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{1}\PYG{o}{)\PYGZob{}}
+		\PYG{n}{exch}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{l+m+mi}{1}\PYG{o}{,} \PYG{n}{n}\PYG{o}{);}
+		\PYG{n}{sink}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{l+m+mi}{1}\PYG{o}{,} \PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{n}{n}\PYG{o}{);}
+	\PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

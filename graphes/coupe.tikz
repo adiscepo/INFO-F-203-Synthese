@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=orange] (0) at (-2, 1) {};
+		\node [style=orange] (1) at (-3.25, 1) {};
+		\node [style=orange] (2) at (-2.5, -1.25) {};
+		\node [style=orange] (3) at (-0.75, 0) {};
+		\node [style=magenta] (4) at (2.25, 1.5) {};
+		\node [style=magenta] (5) at (1.25, 0) {};
+		\node [style=magenta] (6) at (1.5, -1.5) {};
+		\node [style=magenta] (7) at (4, 0.5) {};
+		\node [style=magenta] (8) at (3.5, -1) {};
+		\node [style=orange] (11) at (-0.75, -1.25) {};
+		\node [style=magenta] (12) at (1.25, 1.25) {};
+		\node [style=orange] (13) at (-0.5, 1.5) {};
+		\node [style=orange] (14) at (-3.75, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=E] (3) to (0);
+		\draw [style=E] (0) to (1);
+		\draw [style=E] (1) to (2);
+		\draw [style=E] (2) to (0);
+		\draw [style=E] (5) to (6);
+		\draw [style=E] (5) to (4);
+		\draw [style=E] (4) to (7);
+		\draw [style=E] (5) to (7);
+		\draw [style=E] (0) to (13);
+		\draw [style=E] (13) to (3);
+		\draw [style=E] (3) to (11);
+		\draw [style=E] (11) to (2);
+		\draw [style=E] (5) to (12);
+		\draw [style=E] (12) to (4);
+		\draw [style=E] (6) to (8);
+		\draw [style=E] (5) to (8);
+		\draw [style=E] (1) to (14);
+		\draw [style=E] (2) to (14);
+		\draw [style=coupe] (13) to (12);
+		\draw [style=coupe] (3) to (5);
+		\draw [style=coupe] (11) to (6);
+		\draw [style=redE] (13) to (12);
+		\draw [style=redE] (5) to (3);
+		\draw [style=redE] (11) to (6);
+	\end{pgfonlayer}
+\end{tikzpicture}

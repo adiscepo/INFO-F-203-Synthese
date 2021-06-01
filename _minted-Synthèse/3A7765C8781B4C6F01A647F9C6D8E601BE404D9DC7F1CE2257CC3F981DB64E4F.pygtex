@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{KosarajuSharir}\PYG{o}{(}\PYG{n}{DiGraph} \PYG{n}{G}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+	\PYG{n}{DepthFirstOrder} \PYG{n}{G\PYGZus{}inv} \PYG{o}{=} \PYG{k}{new} \PYG{n}{DepthFirstOrder}\PYG{o}{(}\PYG{n}{G}\PYG{o}{.}\PYG{n+na}{reverse}\PYG{o}{());}
+	\PYG{k}{for} \PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{:} \PYG{n}{G\PYGZus{}inv}\PYG{o}{.}\PYG{n+na}{reversePostorder}\PYG{o}{())}
+		\PYG{k}{if} \PYG{o}{(!}\PYG{n}{marked}\PYG{o}{[}\PYG{n}{v}\PYG{o}{])} \PYG{o}{\PYGZob{}}
+			\PYG{n}{dfs}\PYG{o}{(}\PYG{n}{G}\PYG{o}{,} \PYG{n}{v}\PYG{o}{);}
+			\PYG{n}{count}\PYG{o}{++;}
+		\PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{dfs}\PYG{o}{(}\PYG{n}{DiGraph} \PYG{n}{G}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{v}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+	\PYG{n}{marked}\PYG{o}{[}\PYG{n}{v}\PYG{o}{]} \PYG{o}{=} \PYG{k+kc}{true}\PYG{o}{;}
+	\PYG{n}{id}\PYG{o}{[}\PYG{n}{v}\PYG{o}{]} \PYG{o}{=} \PYG{n}{count}\PYG{o}{;}
+	\PYG{k}{for} \PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{w} \PYG{o}{:} \PYG{n}{G}\PYG{o}{.}\PYG{n+na}{adj}\PYG{o}{(}\PYG{n}{v}\PYG{o}{))}
+		\PYG{k}{if} \PYG{o}{(!}\PYG{n}{marked}\PYG{o}{[}\PYG{n}{w}\PYG{o}{])} \PYG{n}{dfs}\PYG{o}{(}\PYG{n}{G}\PYG{o}{,} \PYG{n}{w}\PYG{o}{);}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

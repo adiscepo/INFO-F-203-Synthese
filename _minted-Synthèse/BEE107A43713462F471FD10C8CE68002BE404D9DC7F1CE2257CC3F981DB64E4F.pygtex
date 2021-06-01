@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{visit}\PYG{o}{(}\PYG{n}{EdgeWeightedGraph} \PYG{n}{G}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{v}\PYG{o}{)\PYGZob{}}
+	\PYG{n}{marked}\PYG{o}{[}\PYG{n}{v}\PYG{o}{]} \PYG{o}{=} \PYG{k+kc}{true}\PYG{o}{;}
+	\PYG{k}{for} \PYG{o}{(}\PYG{n}{Edge} \PYG{n}{e}\PYG{o}{:} \PYG{n}{G}\PYG{o}{.}\PYG{n+na}{adj}\PYG{o}{(}\PYG{n}{v}\PYG{o}{))} \PYG{o}{\PYGZob{}}
+		\PYG{k+kt}{int} \PYG{n}{w} \PYG{o}{=} \PYG{n}{e}\PYG{o}{.}\PYG{n+na}{other}\PYG{o}{(}\PYG{n}{v}\PYG{o}{);}
+		\PYG{k}{if} \PYG{o}{(}\PYG{n}{marked}\PYG{o}{[}\PYG{n}{w}\PYG{o}{])} \PYG{k}{continue}\PYG{o}{;}
+		\PYG{c+c1}{// L\PYGZsq{}arête E est la meilleure connection de l\PYGZsq{}arbre vers w}
+		\PYG{k}{if} \PYG{o}{(}\PYG{n}{e}\PYG{o}{.}\PYG{n+na}{weight}\PYG{o}{()} \PYG{o}{\PYGZlt{}} \PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{])\PYGZob{}}
+			\PYG{n}{edgeTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]} \PYG{o}{=} \PYG{n}{e}\PYG{o}{;}
+			\PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]} \PYG{o}{=} \PYG{n}{e}\PYG{o}{.}\PYG{n+na}{weight}\PYG{o}{();}
+			\PYG{k}{if} \PYG{o}{(}\PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{contains}\PYG{o}{(}\PYG{n}{w}\PYG{o}{))} \PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{change}\PYG{o}{(}\PYG{n}{w}\PYG{o}{,} \PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]):}
+			\PYG{n}{esle}				\PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{insert}\PYG{o}{(}\PYG{n}{w}\PYG{o}{,} \PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]);}				
+		\PYG{o}{\PYGZcb{}}
+	\PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

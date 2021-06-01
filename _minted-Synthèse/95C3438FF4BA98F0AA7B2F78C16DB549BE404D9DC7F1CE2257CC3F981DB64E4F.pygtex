@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Node} \PYG{n+nf}{rotateLeft}\PYG{o}{(}\PYG{n}{Node} \PYG{n}{h}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+	\PYG{n}{Node} \PYG{n}{x} \PYG{o}{=} \PYG{n}{h}\PYG{o}{.}\PYG{n+na}{right}\PYG{o}{;}
+	\PYG{n}{h}\PYG{o}{.}\PYG{n+na}{right} \PYG{o}{=} \PYG{n}{x}\PYG{o}{.}\PYG{n+na}{left}\PYG{o}{;}
+	\PYG{n}{x}\PYG{o}{.}\PYG{n+na}{left} \PYG{o}{=} \PYG{n}{h}\PYG{o}{;}
+	\PYG{k}{return} \PYG{n}{x}\PYG{o}{;}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

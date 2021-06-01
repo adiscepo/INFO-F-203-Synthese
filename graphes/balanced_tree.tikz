@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=V] (0) at (0, 0) {};
+		\node [style=V] (1) at (-1, -1) {};
+		\node [style=V] (2) at (1, -1) {};
+		\node [style=V] (3) at (-1.5, -2) {};
+		\node [style=V] (4) at (-0.5, -2) {};
+		\node [style=V] (5) at (0.5, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (0);
+		\draw (0) to (2);
+		\draw (2) to (5);
+		\draw (1) to (3);
+		\draw (1) to (4);
+	\end{pgfonlayer}
+\end{tikzpicture}

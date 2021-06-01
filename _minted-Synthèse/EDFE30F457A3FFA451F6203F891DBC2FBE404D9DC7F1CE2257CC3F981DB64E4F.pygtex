@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{union}\PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{p}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{q}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+ \PYG{k+kt}{int} \PYG{n}{rootP} \PYG{o}{=} \PYG{n}{find}\PYG{o}{(}\PYG{n}{p}\PYG{o}{);}
+ \PYG{k+kt}{int} \PYG{n}{rootQ} \PYG{o}{=} \PYG{n}{find}\PYG{o}{(}\PYG{n}{q}\PYG{o}{);}
+ \PYG{k}{if} \PYG{o}{(}\PYG{n}{rootP} \PYG{o}{==} \PYG{n}{rootQ}\PYG{o}{)} \PYG{k}{return}\PYG{o}{;}
+ \PYG{n}{parent}\PYG{o}{[}\PYG{n}{rootP}\PYG{o}{]} \PYG{o}{=} \PYG{n}{rootQ}\PYG{o}{;}
+ \PYG{n}{count}\PYG{o}{\PYGZhy{}\PYGZhy{};} \PYG{c+c1}{// On décrémente le nombre de classes de l\PYGZsq{}ensemble}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// Tri}
+\PYG{k+kt}{void} \PYG{n+nf}{sort}\PYG{o}{(}\PYG{n}{Comparable}\PYG{o}{[]} \PYG{n}{a}\PYG{o}{,} \PYG{n}{Comparable}\PYG{o}{[]} \PYG{n}{aux}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{lo}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{hi}\PYG{o}{)\PYGZob{}}
+	\PYG{k}{if} \PYG{o}{(}\PYG{n}{hi} \PYG{o}{\PYGZlt{}=} \PYG{n}{lo}\PYG{o}{)} \PYG{k}{return}\PYG{o}{;}
+	\PYG{k+kt}{int} \PYG{n}{mid} \PYG{o}{=} \PYG{n}{lo} \PYG{o}{+} \PYG{o}{(}\PYG{n}{hi} \PYG{o}{\PYGZhy{}} \PYG{n}{lo}\PYG{o}{)} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{o}{;}
+	\PYG{n}{sort}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{aux}\PYG{o}{,} \PYG{n}{lo}\PYG{o}{,} \PYG{n}{mid}\PYG{o}{);}
+	\PYG{n}{sort}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{aux}\PYG{o}{,} \PYG{n}{mid}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{o}{,} \PYG{n}{hi}\PYG{o}{);}
+	\PYG{n}{merge}\PYG{o}{(}\PYG{n}{a}\PYG{o}{,} \PYG{n}{aux}\PYG{o}{,} \PYG{n}{lo}\PYG{o}{,} \PYG{n}{mid}\PYG{o}{,} \PYG{n}{hi}\PYG{o}{);}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

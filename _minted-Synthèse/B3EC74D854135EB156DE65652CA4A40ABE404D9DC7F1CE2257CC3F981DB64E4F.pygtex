@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{root} \PYG{o}{=} \PYG{n}{insert}\PYG{o}{(}\PYG{n}{root}\PYG{o}{,} \PYG{n}{key}\PYG{o}{,} \PYG{n}{value}\PYG{o}{):}
+\PYG{n}{root}\PYG{o}{.}\PYG{n+na}{color} \PYG{o}{=} \PYG{n}{BLACK}\PYG{o}{;}
+\end{Verbatim}

@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=V] (0) at (0, 2) {1};
+		\node [style=V] (1) at (-2, 1) {0};
+		\node [style=V] (2) at (0, 0) {3};
+		\node [style=V] (3) at (2, 1) {7};
+		\node [style=V] (4) at (-2, -0.75) {2};
+		\node [style=V] (6) at (-2, -2.5) {5};
+		\node [style=V] (7) at (10, 2) {1};
+		\node [style=V] (8) at (8, 1) {0};
+		\node [style=V] (9) at (10, 0) {3};
+		\node [style=V] (10) at (12, 1) {7};
+		\node [style=V] (11) at (6.25, 1) {2};
+		\node [style=V] (12) at (4.5, 1) {5};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=arrow] (3) to (0);
+		\draw [style=arrow] (2) to (0);
+		\draw [style=arrow, in=135, out=45, loop] (0) to ();
+		\draw [style=arrow ret] (4) to (6);
+		\draw [style=arrow ret] (1) to (4);
+		\draw [style=arrow ret] (0) to (1);
+		\draw [style=arrow] (10) to (7);
+		\draw [style=arrow] (9) to (7);
+		\draw [style=arrow, in=135, out=45, loop] (7) to ();
+		\draw [style=arrow ret] (7) to (8);
+		\draw [style=arrow ret, bend right=15, looseness=0.75] (7) to (11);
+		\draw [style=arrow ret, bend right, looseness=0.75] (7) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}

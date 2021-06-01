@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=red] (0) at (0, 0) {100};
+		\node [style=green] (1) at (-2, -2) {50};
+		\node [style=green] (2) at (2, -2) {73};
+		\node [style=yellow] (3) at (-3, -4) {1};
+		\node [style=yellow] (4) at (-1, -4) {3};
+		\node [style=yellow] (5) at (1, -4) {7};
+		\node [style=rred] (6) at (5.25, -2) {100};
+		\node [style=rgreen] (7) at (6.5, -2) {50};
+		\node [style=rgreen] (8) at (7.5, -2) {73};
+		\node [style=ryellow] (9) at (8.5, -2) {1};
+		\node [style=ryellow] (10) at (9.25, -2) {3};
+		\node [style=ryellow] (11) at (10, -2) {7};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=arrow] (0) to (1);
+		\draw [style=new edge style 0] (1) to (3);
+		\draw [style=arrow ret] (4) to (1);
+		\draw [style=arrow] (0) to (2);
+		\draw [style=new edge style 0] (2) to (5);
+		\draw [style=arrow, bend left=90, looseness=1.75] (6) to (7);
+		\draw [style=arrow, bend left=90, looseness=1.75] (6) to (8);
+		\draw [style=new edge style 0, bend right=90, looseness=1.25] (7) to (9);
+		\draw [style=new edge style 0, bend right=90, looseness=1.50] (7) to (10);
+		\draw [style=new edge style 0, bend left=90, looseness=1.50] (8) to (11);
+	\end{pgfonlayer}
+\end{tikzpicture}

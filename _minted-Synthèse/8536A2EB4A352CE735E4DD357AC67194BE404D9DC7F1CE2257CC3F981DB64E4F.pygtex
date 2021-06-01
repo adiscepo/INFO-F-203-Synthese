@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{relax}\PYG{o}{(}\PYG{n}{EdgeWeightedDiGraph} \PYG{n}{G}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{v}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+	\PYG{k}{for} \PYG{o}{(}\PYG{n}{DirectedEdge} \PYG{n}{e} \PYG{o}{:} \PYG{n}{G}\PYG{o}{.}\PYG{n+na}{adj}\PYG{o}{(}\PYG{n}{v}\PYG{o}{))}
+		\PYG{n}{relax}\PYG{o}{(}\PYG{n}{e}\PYG{o}{);}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{PrimMST}\PYG{o}{(}\PYG{n}{EdgeWeightedGraph} \PYG{n}{G}\PYG{o}{)\PYGZob{}}
+	\PYG{k}{for} \PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{o}{;} \PYG{n}{v} \PYG{o}{\PYGZlt{}} \PYG{n}{G}\PYG{o}{.}\PYG{n+na}{V}\PYG{o}{();} \PYG{n}{v}\PYG{o}{++)}
+		\PYG{n}{distTo}\PYG{o}{[}\PYG{n}{v}\PYG{o}{]} \PYG{o}{=} \PYG{n}{Double}\PYG{o}{.}\PYG{n+na}{POSITIVE\PYGZus{}INFINITY}\PYG{o}{;}
+	\PYG{n}{distTo}\PYG{o}{[}\PYG{l+m+mi}{0}\PYG{o}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{o}{;}
+	\PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{insert}\PYG{o}{(}\PYG{l+m+mi}{0}\PYG{o}{,} \PYG{l+m+mi}{0}\PYG{o}{);} \PYG{c+c1}{// Initialise la file de priorité avec la source de distance 0}
+	\PYG{k}{while} \PYG{o}{(!}\PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{isEmpty}\PYG{o}{())} \PYG{n}{visit}\PYG{o}{(}\PYG{n}{G}\PYG{o}{,} \PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{delMin}\PYG{o}{());} \PYG{c+c1}{// Ajoute le sommet le plus proche à l\PYGZsq{}arbre}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

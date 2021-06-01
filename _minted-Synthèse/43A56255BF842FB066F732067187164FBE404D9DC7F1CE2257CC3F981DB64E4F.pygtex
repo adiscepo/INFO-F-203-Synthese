@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void} \PYG{n+nf}{insert}\PYG{o}{(}\PYG{n}{Key} \PYG{n}{x}\PYG{o}{)\PYGZob{}}
+	\PYG{n}{pq}\PYG{o}{[++}\PYG{n}{n}\PYG{o}{]} \PYG{o}{=} \PYG{n}{x}\PYG{o}{;}
+	\PYG{n}{swim}\PYG{o}{(}\PYG{n}{n}\PYG{o}{);}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=red] (0) at (-4, 0) {B};
+		\node [style=yellow] (1) at (-3, -2) {D};
+		\node [style=V] (2) at (-5, -2) {A};
+		\node [style=green] (3) at (-4, -4) {C};
+		\node [style=V] (4) at (-2, -4) {E};
+		\node [style=yellow] (5) at (4, 0) {D};
+		\node [style=red] (6) at (3, -2) {B};
+		\node [style=V] (7) at (5, -2) {E};
+		\node [style=V] (8) at (2, -4) {A};
+		\node [style=green] (9) at (4, -4) {C};
+		\node [style=none] (10) at (-1.5, -2) {};
+		\node [style=none] (11) at (1.5, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=E] (3) to (1);
+		\draw [style=E] (1) to (4);
+		\draw [style=E] (0) to (2);
+		\draw [style=E] (0) to (1);
+		\draw [style=E] (8) to (6);
+		\draw [style=E] (6) to (9);
+		\draw [style=E] (6) to (5);
+		\draw [style=E] (5) to (7);
+		\draw [style=arrow, in=180, out=0] (10.center) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
