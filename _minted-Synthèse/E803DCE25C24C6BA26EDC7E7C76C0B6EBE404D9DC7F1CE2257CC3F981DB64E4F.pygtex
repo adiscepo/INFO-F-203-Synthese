@@ -6,7 +6,7 @@
 	\PYG{k}{for} \PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{k} \PYG{o}{=} \PYG{n}{lo}\PYG{o}{;} \PYG{n}{k} \PYG{o}{\PYGZlt{}=} \PYG{n}{hi}\PYG{o}{;} \PYG{n}{k}\PYG{o}{++)\PYGZob{}}
 		\PYG{k}{if} \PYG{o}{(}\PYG{n}{i} \PYG{o}{\PYGZgt{}} \PYG{n}{mid}\PYG{o}{)} \PYG{n}{a}\PYG{o}{[}\PYG{n}{k}\PYG{o}{]} \PYG{o}{=} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{j}\PYG{o}{++];}
 		\PYG{k}{else} \PYG{k}{if} \PYG{o}{(}\PYG{n}{j} \PYG{o}{\PYGZgt{}} \PYG{n}{hi}\PYG{o}{)} \PYG{n}{a}\PYG{o}{[}\PYG{n}{k}\PYG{o}{]} \PYG{o}{=} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{i}\PYG{o}{++];}
-		\PYG{k}{else} \PYG{k}{if} \PYG{o}{(}\PYG{n}{less}\PYG{o}{(}\PYG{n}{aux}\PYG{o}{[}\PYG{n}{j}\PYG{o}{],} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]))} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{j}\PYG{o}{++];}
+		\PYG{k}{else} \PYG{k}{if} \PYG{o}{(}\PYG{n}{less}\PYG{o}{(}\PYG{n}{aux}\PYG{o}{[}\PYG{n}{j}\PYG{o}{],} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]))} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{k}\PYG{o}{]} \PYG{o}{=} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{j}\PYG{o}{++];}
 		\PYG{k}{else} \PYG{n}{a}\PYG{o}{[}\PYG{n}{k}\PYG{o}{]} \PYG{o}{=} \PYG{n}{aux}\PYG{o}{[}\PYG{n}{i}\PYG{o}{++];}
 	\PYG{o}{\PYGZcb{}}
 \PYG{o}{\PYGZcb{}}

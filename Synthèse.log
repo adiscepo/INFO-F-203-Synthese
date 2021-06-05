@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.8)  1 JUN 2021 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.8)  5 JUN 2021 07:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1465,7 +1465,7 @@ B64E4F.pygtex)
 \openout5 = `Synthèse.pyg'.
 
 
-(./_minted-Synthèse/AE82DCEEAE7A6AA2A683EF0116CC81D2BE404D9DC7F1CE2257CC3F981D
+(./_minted-Synthèse/E803DCE25C24C6BA26EDC7E7C76C0B6EBE404D9DC7F1CE2257CC3F981D
 B64E4F.pygtex)
 \openout5 = `Synthèse.pyg'.
 
@@ -1635,7 +1635,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 762.
 Here is how much of TeX's memory you used:
  41978 strings out of 483065
  970630 string characters out of 5963551
- 1754870 words of memory out of 5000000
+ 1754869 words of memory out of 5000000
  56098 multiletter control sequences out of 15000+600000
  541491 words of font info for 60 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -1654,7 +1654,7 @@ onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on Synthèse.pdf (18 pages, 245497 bytes).
+Output written on Synthèse.pdf (18 pages, 245463 bytes).
 PDF statistics:
  396 PDF objects out of 1000 (max. 8388607)
  357 compressed objects within 4 object streams

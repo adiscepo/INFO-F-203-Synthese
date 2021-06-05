@@ -144,7 +144,7 @@ void merge(Comparable[] a, Comparable[] aux, int lo, int mid, int hi){
 	for (int k = lo; k <= hi; k++){
 		if (i > mid) a[k] = aux[j++];
 		else if (j > hi) a[k] = aux[i++];
-		else if (less(aux[j], aux[i])) aux[i] = aux[j++];
+		else if (less(aux[j], aux[i])) aux[k] = aux[j++];
 		else a[k] = aux[i++];
 	}
 }
@@ -267,7 +267,7 @@ void delMax(){
 \end{minted}
 
 \subsection{Construction en temps linéaire}
-Il est possible de créer un tas en temps linéaire ($O(n)$) avec un tableau trié, en utilisant les appelant la méthode \verb|sink()| sur toutes les clés du tableau en allant de droite à gauche. 
+Il est possible de créer un tas en temps linéaire ($O(n)$), en utilisant les appelant la méthode \verb|sink()| sur toutes les clés du tableau en allant de droite à gauche. 
 
 \begin{minted}{java}
 for (int k = n/2; k >= 1; k--) sink(a, k, n);
@@ -619,7 +619,7 @@ Comme Kruskal, il cherche à trouver l'arbre couvrant de poids minimum. C'est é
 \begin{enumerate}
 \item Initialiser l'arbre actuel $T$ à un seul sommet initial 0.
 \item Ajouter $T$ à l'arête de poids minimum parmis toutes les arêtes ayant exactement une extremité dans $T$.
-\item Répéter l'opération précédente jusqu'à ce que $T$ contienne  $E - 1$ arêtes.
+\item Répéter l'opération précédente jusqu'à ce que $T$ contienne  $V - 1$ arêtes.
 \end{enumerate}
 On peut utiliser une file de priorité pour contenir l'ensemble des arêtes ayant au moins une extremité dans $T$.  La clé associé à une arête $e$ dans la file est son poids $\omega(e)$. Si une arête extraite de la file ) deux extremités dans $T$, on l'ignore et on passe à la suivante. 
 \\Lorsqu'on ajoute une arête dans $T$, on ajoute dans la file toutes les arêtes incidentes à celle-ci.
