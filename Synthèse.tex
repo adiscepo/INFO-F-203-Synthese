@@ -743,6 +743,16 @@ for (int v : topological.order()) {
     for (DirectedEdge e : G.adj(v))
 	 relax(e);
 }
+
+
+private void relax (EdgeWeightGraph G, DirectedEdge e) {
+    int v = e.from(), w = e.to();
+    if (distTo[w] > distTo[v] + e.weight()) {
+        distTo[w] = distTo[v] + e.weight();
+        edgeTo[w] = e;
+    }
+}
+
 \end{minted}
 \underline{Complexité}: $O(V + E)$ il s'agit de faire un bête \verb|dfs| pour obtenir l'ordre topologique et ensuite d'effectuer une étape de relaxation sur les arêtes
 \section{Programmation dynamique}

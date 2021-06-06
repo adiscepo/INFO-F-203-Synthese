@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.8)  6 JUN 2021 20:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.8)  6 JUN 2021 21:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1582,10 +1582,6 @@ B64E4F.pygtex [14])
 B64E4F.pygtex)
 \openout5 = `Synthèse.pyg'.
 
-runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o _mi
-nted-Synthèse/8AC709F270E322F438AE7E2AB4914CC9BE404D9DC7F1CE2257CC3F981DB64E4F
-.pygtex Synthèse.pyg)...executed.
-
 
 (./_minted-Synthèse/8AC709F270E322F438AE7E2AB4914CC9BE404D9DC7F1CE2257CC3F981D
 B64E4F.pygtex) [15]
@@ -1615,18 +1611,22 @@ B64E4F.pygtex)
 B64E4F.pygtex [17])
 \openout5 = `Synthèse.pyg'.
 
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o _mi
+nted-Synthèse/A0107CC18742471716AF1D8B5C96CDB7BE404D9DC7F1CE2257CC3F981DB64E4F
+.pygtex Synthèse.pyg)...executed.
 
-(./_minted-Synthèse/AA1A1D59C59F9989BA27A4F797C5BA7EBE404D9DC7F1CE2257CC3F981D
+
+(./_minted-Synthèse/A0107CC18742471716AF1D8B5C96CDB7BE404D9DC7F1CE2257CC3F981D
 B64E4F.pygtex)
-runsystem(rm _minted-Synthèse/00C92F20F767C966508E92E835D4D430BE404D9DC7F1CE22
+runsystem(rm _minted-Synthèse/AA1A1D59C59F9989BA27A4F797C5BA7EBE404D9DC7F1CE22
 57CC3F981DB64E4F.pygtex)...executed.
 
- [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
+ [18] [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 774.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 774.
  (./Synthèse.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 774.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 774.
 Package rerunfilecheck Info: File `Synthèse.out' has not changed.
 (rerunfilecheck)             Checksum: D24E9B32433F9345CE8B3720A912CFBD;2128.
 
@@ -1638,11 +1638,11 @@ runsystem(rm Synthèse.pyg)...executed.
 Package logreq Info: Writing requests to 'Synthèse.run.xml'.
 \openout1 = `Synthèse.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 774.
  ) 
 Here is how much of TeX's memory you used:
- 41980 strings out of 483065
- 970783 string characters out of 5963551
+ 41981 strings out of 483065
+ 970790 string characters out of 5963551
  1754870 words of memory out of 5000000
  56099 multiletter control sequences out of 15000+600000
  541491 words of font info for 60 fonts, out of 8000000 for 9000
@@ -1662,10 +1662,10 @@ onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on Synthèse.pdf (18 pages, 245625 bytes).
+Output written on Synthèse.pdf (19 pages, 246032 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
- 357 compressed objects within 4 object streams
- 98 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 361 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
  269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
