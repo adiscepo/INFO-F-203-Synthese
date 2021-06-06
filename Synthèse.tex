@@ -621,9 +621,10 @@ Comme Kruskal, il cherche à trouver l'arbre couvrant de poids minimum. C'est é
 \item Ajouter $T$ à l'arête de poids minimum parmis toutes les arêtes ayant exactement une extremité dans $T$.
 \item Répéter l'opération précédente jusqu'à ce que $T$ contienne  $V - 1$ arêtes.
 \end{enumerate}
-On peut utiliser une file de priorité pour contenir l'ensemble des arêtes ayant au moins une extremité dans $T$.  La clé associé à une arête $e$ dans la file est son poids $\omega(e)$. Si une arête extraite de la file ) deux extremités dans $T$, on l'ignore et on passe à la suivante. 
+On peut utiliser une file de priorité pour contenir l'ensemble des arêtes ayant au moins une extremité dans $T$.  La clé associé à une arête $e$ dans la file est son poids $\omega(e)$. Si une arête extraite de la file a deux extremités dans $T$, on l'ignore et on passe à la suivante. 
 \\Lorsqu'on ajoute une arête dans $T$, on ajoute dans la file toutes les arêtes incidentes à celle-ci.
 \begin{minted}{java}
+// mst  = minimum spanning tree (T)
 while (!pq.isEmpty() && mst.size() < G.V() - 1){
 	Edge e = pq.delMin();
 	int v = e.either(), w = e.other(v);
@@ -631,6 +632,7 @@ while (!pq.isEmpty() && mst.size() < G.V() - 1){
 	mst.enqueue(e);
 	if (!marked[v]) visit(G, v); // visit() màj la file de priorité
 	if (!marked[w]) visit(G, w);
+}
 \end{minted}
 
 
@@ -645,7 +647,7 @@ void visit(EdgeWeightedGraph G, int v){
 			edgeTo[w] = e;
 			distTo[w] = e.weight();
 			if (pq.contains(w)) pq.change(w, distTo[w]):
-			esle				pq.insert(w, distTo[w]);				
+			else pq.insert(w, distTo[w]);				
 		}
 	}
 }
@@ -737,9 +739,9 @@ void relax(DirectedEdge e){
 Grâce à l'absence de cycles, l'on peut éviter d'utiliser une structure de file de priorité. On peut trouver les plus courts chemins d'une source vers tous les autres sommets en les considérant dans un ordre topologique (\ref{topo}) ensuite on pourra effectuer les étapes de relaxation sur les arêtes en temps constant.
 
 \begin{minted}{java}
-void relax(EdgeWeightedDiGraph G, int v) {
-	for (DirectedEdge e : G.adj(v))
-		relax(e);
+for (int v : topological.order()) {
+    for (DirectedEdge e : G.adj(v))
+	 relax(e);
 }
 \end{minted}
 \underline{Complexité}: $O(V + E)$ il s'agit de faire un bête \verb|dfs| pour obtenir l'ordre topologique et ensuite d'effectuer une étape de relaxation sur les arêtes
@@ -754,7 +756,7 @@ Méthode de programmation, pour simplifier/diminuer la complexité d’un probl�
 \item Plus longue sous-séquence commune avec le plus court chemin
 \item Produits de matrices
 \item Algorithme pseudo-polynomiaux (sac à dos)
-\end{itemize}
+\end{itemize}esle
 
 \verb|FIN|\\
 Merci aux étudiants d'Info2024 pour leurs corrections !

@@ -9,7 +9,7 @@
 			\PYG{n}{edgeTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]} \PYG{o}{=} \PYG{n}{e}\PYG{o}{;}
 			\PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]} \PYG{o}{=} \PYG{n}{e}\PYG{o}{.}\PYG{n+na}{weight}\PYG{o}{();}
 			\PYG{k}{if} \PYG{o}{(}\PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{contains}\PYG{o}{(}\PYG{n}{w}\PYG{o}{))} \PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{change}\PYG{o}{(}\PYG{n}{w}\PYG{o}{,} \PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]):}
-			\PYG{n}{esle}				\PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{insert}\PYG{o}{(}\PYG{n}{w}\PYG{o}{,} \PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]);}				
+			\PYG{k}{else} \PYG{n}{pq}\PYG{o}{.}\PYG{n+na}{insert}\PYG{o}{(}\PYG{n}{w}\PYG{o}{,} \PYG{n}{distTo}\PYG{o}{[}\PYG{n}{w}\PYG{o}{]);}				
 		\PYG{o}{\PYGZcb{}}
 	\PYG{o}{\PYGZcb{}}
 \PYG{o}{\PYGZcb{}}
