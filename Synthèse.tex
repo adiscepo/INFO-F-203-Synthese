@@ -511,7 +511,7 @@ void bfs(Graph G, int s){
 \label{topo}
 Ne concerne que les graphes dirigés acycliques (DAG).
 \\\underline{Principe}: Ordre total sur l'ensemble des sommets, dans lequel $s$ précède $t$ pour tout arc d'un sommet $s$ à un sommet $t$. En gros, chaque sommet doit apparaître avant ses successeurs. Aussi il n'y a pas d'unicité de l'ordre.
-\\ Il suffit de faire un parcours en profondeur du graphe (\ref{dfs}) et récupérer son postordre.
+\\ Il suffit de faire un parcours en profondeur du graphe (\ref{dfs}) et récupérer son postordre, dont on part de la fin pour créer notre ordre topologique.
 \\\underline{Algorithmes basés sur le tri topologique}: La recherche de plus court chemin dans un graphe acyclique, avec l'algo de Dijkstra.
 
 \section{Composantes fortement connexes}
@@ -766,9 +766,10 @@ Méthode de programmation, pour simplifier/diminuer la complexité d’un probl�
 \item Plus longue sous-séquence commune avec le plus court chemin
 \item Produits de matrices
 \item Algorithme pseudo-polynomiaux (sac à dos)
-\end{itemize}esle
+\end{itemize}
 
 \verb|FIN|\\
 Merci aux étudiants d'Info2024 pour leurs corrections !
 \\Lien vers la page Github du repo: \url{https://github.com/adiscepo/INFO-F-203-Synthese/}
+\\Bonne merde pour l'exam
 \end{document}
